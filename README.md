@@ -9,7 +9,7 @@ Uses Connect-AzureAD to connect to your organization and from there prompts you 
 
 Follow the on-host prompts, it'll let you know how to do the things.
 
-# convertFirstAndLastNameToO365Fields.ps1
+### convertFirstAndLastNameToO365Fields.ps1
 ---
 
 ### **Web-help Script!**
