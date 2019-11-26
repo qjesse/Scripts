@@ -1,13 +1,14 @@
 # Scripts
-A collection of scripts for Powershell.
+A collection of scripts for Powershell. Typically relating to Office 365.
 
 ### editUserInformation.ps1
+---
 
-Uses Connect-AzureAD to connect to your organization and from there prompts you for input of what you'd like to do for editing a particular user. For now only supports being able to change phone extension, job title, and their password.
+Uses Connect-AzureAD to connect to your organization and from there prompts you for input of what you'd like to do for editing a particular user. Only supports being able to change phone extension, job title, and their password.
 
 #### Usage
 
-Follow the on-host prompts, it'll let you know how to do the things.
+Follow the on-host prompts! 
 
 ### convertFirstAndLastNameToO365Fields.ps1
 ---
@@ -23,8 +24,11 @@ This script takes a list of names provided by single-column CSV and converts the
 * Display Name (full name)
 
 And that's it. It does nothing else until you import it; but it should seamlessly import with no errors as long as everything is filled out correctly. It's up to you to make sure you don't mess up any user names or domain names using this method! You can't go back after an import into O365 or do this method to bulk edit in O365.
-## Adding Users
+
+## Adding Bulk Users
 ---
+To add bulk users, navigate to your Active Users page in the admin center. At the top next to ```+ Add a user``` you should see a ```more``` dropdown, and from there you should see ```+ Import multiple users```. After you run the script you should have a csv that's ready to be imported via file upload.
+
 ### Prerequisites for script:
 >* A list of first and last names only in one single column in a CSV file. 
 >* The full path of this CSV file. ex. c:\users\jstandridge\documents\users.csv
