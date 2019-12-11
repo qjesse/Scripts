@@ -42,4 +42,12 @@ Output should always look like this (each case and formatting will reflect the s
 |---|---|---|---|
 |Jesse | Standridge | jesse.standridge@example.com | Jesse Standridge |
 
+## checkOfficeLicenseAndRemove(choice).ps1
+---
+This script is designed to pull licenses for your O365 applications and gives you an option to delete all keys for a fresh start on your system or even select certain ones. Checks both x86 and x64 paths for the licenses. 
 
+#### Usage
+>* Selection 1 allows you select certain keys and clear them. Input any 5 character keys that appear on your host, such as FFFFF in this example:
+ ```Last 5 characters of installed product key: FFFFF ```
+>* Selection 2 clears all of these product keys. Every single one. Bye bye.
+>* Selection 3 does nothing but exits you. [Nothing else.](https://i.kym-cdn.com/photos/images/newsfeed/001/611/277/69d.jpg)
