@@ -1,8 +1,7 @@
 # Scripts
-A collection of scripts for Powershell. Typically relating to Office 365.
+A collection of scripts for Powershell. Typically relating to Office 365. I like the idea of making my scripts interactive but I cannot gaurantee that to be the case for every single one. Hope you find some use cases for these!
 
-### editUserInformation.ps1
----
+## editUserInformation.ps1
 
 Uses Connect-AzureAD to connect to your organization and from there prompts you for input of what you'd like to do for editing a particular user. Only supports being able to change phone extension, job title, and their password.
 
@@ -10,8 +9,7 @@ Uses Connect-AzureAD to connect to your organization and from there prompts you 
 
 Follow the on-host prompts! 
 
-### convertFirstAndLastNameToO365Fields.ps1
----
+## convertFirstAndLastNameToO365Fields.ps1
 
 ### **Web-help Script!**
 For now I only have a script set up to help the web process. The problem was if you tried to add the only two fields you needed, User Name and Display Name, it wouldn't fill in the fields First Name and Last Name. I found this highly rude. 
@@ -25,8 +23,8 @@ This script takes a list of names provided by single-column CSV and converts the
 
 And that's it. It does nothing else until you import it; but it should seamlessly import with no errors as long as everything is filled out correctly. It's up to you to make sure you don't mess up any user names or domain names using this method! You can't go back after an import into O365 or do this method to bulk edit in O365.
 
-## Adding Bulk Users
----
+### Adding Bulk Users
+
 To add bulk users, navigate to your Active Users page in the admin center. At the top next to ```+ Add a user``` you should see a ```more``` dropdown, and from there you should see ```+ Import multiple users```. After you run the script you should have a csv that's ready to be imported via file upload.
 
 ### Prerequisites for script:
@@ -43,7 +41,7 @@ Output should always look like this (each case and formatting will reflect the s
 |Jesse | Standridge | jesse.standridge@example.com | Jesse Standridge |
 
 ## checkOfficeLicenseAndRemove(choice).ps1
----
+
 This script is designed to pull licenses for your O365 applications and gives you an option to delete all keys for a fresh start on your system or even select certain ones. Checks both x86 and x64 paths for the licenses. 
 
 #### Usage
